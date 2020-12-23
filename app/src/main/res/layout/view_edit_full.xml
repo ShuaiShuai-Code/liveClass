@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_edit_full"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp50"
+    android:layout_marginBottom="@dimen/dp20"
+    android:gravity="center_vertical"
+    android:visibility="gone"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rr_lock"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginLeft="@dimen/dp13"
+        android:background="@drawable/bg_round_color_no_stroke_black_45">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_notice"
+            android:padding="@dimen/dp9" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp35"
+        android:layout_toRightOf="@+id/rr_lock"
+        android:background="@drawable/bg_round_color_no_stroke_black_5"
+        android:gravity="center"
+        android:text="参与讨论"
+        android:layout_marginLeft="@dimen/dp15"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15" />
+
+</LinearLayout>

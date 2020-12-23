@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/jmui_chat_item_send_layout">
+
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/jmui_fail_resend_ib"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/send_message_failed"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/jmui_sending_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/jmui_sending_img"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_receipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="7dp"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_sent_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="昵称1111"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dp10"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_10" />
+            <TextView
+                android:id="@+id/jmui_msg_content"
+                style="@style/jmui_msg_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/bg_round_color_d5e2ff"
+                android:text="fdfdfdfdf"
+                android:layout_marginRight="@dimen/dp10"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorLink="#157BFB"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_businessCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/business_card_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/business_head"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="13.33dp"
+                    android:layout_marginBottom="12.33dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_nickUser"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11.33dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="昵称1111"
+                        android:textColor="#2C2C2C"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_userName"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11.33dp"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="用户1111"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="183dp"
+                android:layout_height="0.33dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16.67dp"
+                android:background="#DCDCDC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="个人名片"
+                android:textColor="#989898"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/jmui_avatar_iv"
+            style="@style/jmui_chat_item_sender_avatar_style" />
+
+    </LinearLayout>
+
+</LinearLayout>

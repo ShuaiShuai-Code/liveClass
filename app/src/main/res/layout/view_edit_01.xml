@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_edit_01"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp30"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_round_gray_98"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_input_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="点击参与讨论"
+            android:minHeight="28dp"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:imeOptions="flagNoExtractUi"
+            android:textColorHint="@color/gray_98"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:id="@+id/image_photo1"
+            android:layout_width="@dimen/h_50dp"
+            android:layout_height="@dimen/h_50dp"
+            android:layout_margin="@dimen/h_10dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_submit"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_round_gray_98"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="发表"
+        android:textColor="@color/color_000000"
+        android:visibility="visible" />
+
+
+</LinearLayout>

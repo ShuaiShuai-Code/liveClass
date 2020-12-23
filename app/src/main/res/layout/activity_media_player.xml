@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2">
+
+    <SurfaceView
+        android:id="@+id/SurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_gravity="top" />
+
+    <com.pili.pldroid.playerdemo.view.PlayerMenuView
+        android:id="@+id/playMenuView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_height="200dp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="@dimen/dp52"
+        android:background="@color/color_f2f2f2"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/chat_room_item" />
+
+
+    <ListView
+        android:id="@+id/listview_full"
+        android:layout_width="@dimen/dp275"
+        android:layout_height="@dimen/dp100"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_marginBottom="@dimen/dp100"
+        android:divider="@null"
+        android:dividerHeight="@dimen/dp5"
+        android:paddingRight="@dimen/dp5"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/chat_room_item"
+        android:visibility="gone"/>
+    <include
+        layout="@layout/view_edit_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="bottom" />
+    <include
+        layout="@layout/view_edit_full"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="bottom" />
+
+    <LinearLayout
+        android:id="@+id/LoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/buffering"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/StatInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</FrameLayout>
